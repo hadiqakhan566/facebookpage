@@ -1,0 +1,163 @@
+<html>
+<head>
+<title> Facebook</title>
+<style>
+body{
+  margin:0;
+  padding:0;
+  background:linear-gradient(white, #D3D8E8);
+  font-family:Helvetica, Arial,sans-serif;
+  }
+  .header{
+  background-color:rgb(59, 89, 152);
+  height:12.2%;
+  width:100%;
+  font-family:tahoma;
+  border: 1px solid darkblue;
+  }
+.right{
+  width:45%;
+  position:absolute;
+  top:15%;
+  left:756;
+  }
+  
+  .left{
+  width:55%;
+  position:absolute;
+  left:0;
+  }
+  .image{
+  position:relative;
+  left:100px;
+  margin-top: 50px;
+  }
+  .registration_form{
+  background-color:white;
+  border: 1px solid rgd(189, 199, 216);
+  border-radius:5px;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size:18px;
+  font-weight:400;
+  outline-color:rgb(77, 144, 254);
+  padding-bottom:8px;
+  padding-top:8px;
+  padding-left:10px;
+  padding-right:10px;
+  margin:6px;
+  }
+  
+  select{
+       background-color:rgb(221,221,221);
+	   border:1px solid rgb(189, 199, 216);
+	   font-family: Helvetica,Arial,sans-serif;
+	   font-size:13px;
+	   font-weight:400;
+	   height:30px
+	   padding:5px;
+	   width:56px
+	   margin:0;
+	   }
+#birhday_help{
+       color:rgb(54, 88, 153);
+       font-family: Helvetica,Arial,sans-serif;
+	   font-size:11px;
+	   text-decoration-color:rgb(54, 88, 153);
+	   width:150px;
+	   display:inline-block;
+	   text-decoration:none;
+	   }
+.gender{
+       color:rgb(29, 33, 41);
+       font-family: Helvetica,Arial,sans-serif;
+	   font-size:18px;
+	   font-weight:400;
+       padding-top:30px;
+       padding-left:3px;
+       padding-right:10px;
+	  } 
+.terms_and_conditions{
+       color:rgb(119, 119, 199);
+	   display-block;
+       font-family: Helvetica,Arial,sans-serif;
+	   font-size:11px;
+       padding-top:11px;     
+	   width:316px;
+}
+#submit{
+       font-size:18px;
+	   background-color:rgb(105, 167, 78);
+	   border:1px solid rgb(59, 110, 34);
+	   color:white;
+	   font-family: Helvetica,Arial,sans-serif;
+	   padding:20px;
+     border-radius:8px;
+	   width:194px;
+	   text-align:center;
+	   text-shadow:rgba(0,0,0,0.5) 0px 1px 2px;
+	   height:30px;
+	   }
+	   
+
+
+  
+  </style>
+</head>
+
+
+
+<body>
+<div class = "header">
+<form name="userLogin" method="post" action="login.aspx">
+
+  <span style="font-size:45px;position:absolute;left:180px;color:white;top:3.5%;"> <b> facebook</b> </span>
+  <span style="position:absolute;right:495px;color:white;top:2%;font-size:12px;font-family:Helvetica,Arial,sans-serif"> Email or Phone</span>
+  <span style="position:absolute;right:350px;color:white;top:2%;font-size:12px;font-family:Helvetica,Arial,sans-serif"> Password</span>
+  
+  <div style="position:absolute; right:175px;top:5%;">
+  <input type="text" required="required" style="width:150px;height:22px;border:0.5px solid black"></input> &emsp;
+  <input type="password" required="required"  style="width:150px;height:22px;border:0.5px solid black"></input> &emsp;
+  <button style="background-color:#4267b2; height:22px; color:white; border:1px solid darkblue; border-radius:2px;" ><b>Log In </b> </button><br>
+  <a href="#" style="font-size:12px;color:#9cb4d8; text-decoration:none; position:relative; left:175px; top:1.5px;"> forgotten password?</a>
+  </div>
+  </form>
+  </div>
+  
+   
+  
+  
+  <div class ="left">
+  <form name="createAccount" method="post" action="createAccount.aspx">
+  <span style="color:rgb(14,56,95); font-size:20px; font-weight:700; width:300px; word-spacing:-1;display:block; position:relative; left:200px; margin:2%;">Facebook helps you connect and share with the people in your life.</span>
+  <img class = "image" src="Capture.png"/>
+  </div> 
+
+  <div class= "right">
+  <span style="color:#333; font-size:36px;font-family: Helvetica,Arial,sans-serif; font-weight:700;"> Create an account</span><br><br>
+  <span style="color:#1d2129; font:19px; font-family: Helvetica,Arial,sans-serif;"> It's free and always will be.</span>
+  <br><br>
+  <input class="registration_form" type="text" placeholder="First Name" required="required" style="width:180px;"></input>
+   <input class="registration_form" type="text" placeholder="Last Name" required="required" style="width:180px;"></input><br>
+    <input class="registration_form" type="text" placeholder="Mobile number or Email address" required="required" style="width:375px;"></input><br>
+   <input class="registration_form" type="password" placeholder="New Password" required="required"  style="width:375px;"></input><br><br>
+   
+   <span style="color:#1d2129; font-size:19px; font-family:Helvetica, Arial,sans-serif;"> Birthday </span><br>
+   <input type="date" name="">
+   
+  
+   
+   <a id="birhday_help" href="#">Why i need to provide my birthday?</a><br><BR>
+   <input type="radio" name= "gender" value="male">Male</input>
+   <input type="radio" name= "gender" value="female">Female</input><br>
+
+   
+   <p class = "terms_and_conditions">
+      By clicking Create an account, you agree to our Terms and confirm that you have read our Data Policy, including our cookie Policy. You may receive SMS message notification from Facebook and can opt out at any time.
+  </p><br>  
+    
+  <input type="submit" id= "submit" value="Create new account" ><br>
+  </form>
+     <span style="font-family:Helvetica,Arial,sans-serif; color:rgba(102, 102,102); font-size:13px;"><a href="#"> Create a Page</a> for a celebrity, band or business.</span>
+   </div>    
+</body>
+</html>
